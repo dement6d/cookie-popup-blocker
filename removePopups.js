@@ -5,7 +5,6 @@ const stackoverflow = [
     "askubuntu.com",
     "superuser.com"
 ]
-
 stackoverflow.forEach((site) => {
     if (document.URL.includes(site)) {
         const popup = document.querySelector('.ff-sans.ps-fixed.z-nav-fixed');
