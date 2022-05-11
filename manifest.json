@@ -1,0 +1,23 @@
+{
+    "name": "Cookie Popup Blocker",
+    "description": "Remove annoying cookie popups on many known websites",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [ "*://*/*" ],
+            "run_at": "document_end",
+            "js": [ "removePopups.js" ]
+        }
+    ],
+    "icons": {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {}
+  }
