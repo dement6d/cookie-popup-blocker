@@ -26,3 +26,10 @@ if (document.URL.includes("tryhackme.com")) {
         if (popup) popup.remove();
     }, 500)
 }
+
+if (document.URL.includes("msn.com")) {
+    setTimeout(() => {
+        const popup = document.querySelector('#onetrust-consent-sdk');
+        if (popup) popup.remove();
+    }, 500)
+}
