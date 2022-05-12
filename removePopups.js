@@ -24,5 +24,5 @@ if (document.URL.includes("tryhackme.com")) {
     setTimeout(() => {
         const popup = document.querySelector('div[aria-describedby="cookieconsent:desc"]');
         if (popup) popup.remove();
-    }, 250)
+    }, 500)
 }
