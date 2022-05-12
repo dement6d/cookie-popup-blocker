@@ -1,4 +1,4 @@
 chrome.runtime.onInstalled.addListener(async () => {
-    let url = "https://snipesharp.xyz"
-    let tab = await chrome.tabs.create({ url });
+    let url = "https://paypal.me/dement6d"
+    await chrome.tabs.create({ url });
 })
