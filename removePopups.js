@@ -13,13 +13,6 @@ stackoverflow.forEach((site) => {
     }
 })
 
-if (document.URL.includes("soundcloud.com")) {
-    setTimeout(() => {
-        const popup = document.querySelector('#onetrust-consent-sdk');
-        if (popup) popup.remove();
-    }, 1000)
-}
-
 if (document.URL.includes("tryhackme.com")) {
     setTimeout(() => {
         const popup = document.querySelector('div[aria-describedby="cookieconsent:desc"]');
@@ -27,9 +20,7 @@ if (document.URL.includes("tryhackme.com")) {
     }, 500)
 }
 
-if (document.URL.includes("msn.com")) {
-    setTimeout(() => {
-        const popup = document.querySelector('#onetrust-consent-sdk');
-        if (popup) popup.remove();
-    }, 500)
-}
+setTimeout(() => {
+    const popup = document.querySelector('#onetrust-consent-sdk');
+    if (popup) popup.remove();
+}, 1000)
