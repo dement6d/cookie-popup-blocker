@@ -22,4 +22,7 @@ setTimeout(() => {
 
     const popupC = document.querySelector('.cookie-policy');
     popupC && popupC.remove();
+
+    const popupD = document.querySelector('.cookie-consent');
+    popupD && popupD.remove();
 }, 1000)
