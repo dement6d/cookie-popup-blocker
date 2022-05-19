@@ -13,21 +13,13 @@ stackoverflow.forEach((site) => {
     }
 })
 
-if (document.URL.includes("tryhackme.com")) {
-    setTimeout(() => {
-        const popup = document.querySelector('div[aria-describedby="cookieconsent:desc"]');
-        if (popup) popup.remove();
-    }, 500)
-}
-
-if (document.URL.includes("ubuntu.com")) {
-    setTimeout(() => {
-        const popup = document.querySelector('.cookie-policy');
-        if (popup) popup.remove();
-    }, 500)
-}
-
 setTimeout(() => {
-    const popup = document.querySelector('#onetrust-consent-sdk');
-    if (popup) popup.remove();
+    const popupA = document.querySelector('#onetrust-consent-sdk');
+    popupA && popupA.remove();
+
+    const popupB = document.querySelector('div[aria-describedby="cookieconsent:desc"]');
+    popupB && popupB.remove()
+
+    const popupC = document.querySelector('.cookie-policy');
+    popupC && popupC.remove();
 }, 1000)
