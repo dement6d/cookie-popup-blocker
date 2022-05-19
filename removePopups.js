@@ -25,4 +25,9 @@ setTimeout(() => {
 
     const popupD = document.querySelector('.cookie-consent');
     popupD && popupD.remove();
+
+    const popupE1 = document.querySelector('.truste_overlay');
+    const popupE2 = document.querySelector('.truste_box_overlay');
+    popupE1 && popupE1.remove();
+    popupE2 && popupE2.remove();
 }, 1000)
